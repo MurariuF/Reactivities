@@ -5,6 +5,7 @@ import { Form, Label } from 'semantic-ui-react';
 interface Props {
     placeholder: string;
     name: string;
+    type?: string;
     label?: string;
 }
 
@@ -18,5 +19,5 @@ export default function MyTextInput(props: Props) {
             <Label basic color='red'>{meta.error}</Label>
         ) : null}
       </Form.Field>
-    );
+    )
 }
